@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>Anime</title>
+</head>
+<body>
+        <header class="container">
+
+            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="darck">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">ZDV Anime</a>
+              </div>
+                <div class="container-fluid">
+                  
+                  <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#"> Home
+                          <span class="visually-hidden">(current)</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Categoria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Mi</a>
+                      </li>
+                      
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-sm-2" type="search" placeholder="Search">
+                      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+    
+        <main class="container">
+            <section id="movie-creation">
+                <h2 class="text-center mt-3 pb-1">Crear una peli</h2>
+    
+                <form id="movies-form">
+                    <fieldset>
+                      
+                      <div>
+                        <label for="movieName" class="form-label mt-4">Nombre</label>
+                        <input type="text" class="form-control" id="movieName" placeholder="Intensamente">
+                      </div>
+                      <div>
+                        <label for="movieDescription" class="form-label mt-4">Descripción</label>
+                        <input type="text" class="form-control" id="movieDescription" placeholder="Una peli de...">
+                      </div>
+                      <div>
+                        <label for="releaseDate" class="form-label mt-4">Lanzamiento</label>
+                        <input type="date" class="form-control" id="releaseDate">
+                      </div>
+                                            
+                      <div>
+                        <label for="genres" class="form-label mt-4">Géneros</label>
+                        <select multiple="" class="form-select" id="genres">
+                          <option>Acción</option>
+                          <option>Comedia</option>
+                          <option>Drama</option>
+                          <option>Animada</option>
+                          <option>Documental</option>
+                          <option>Horror</option>
+                          <option>Thriller</option>
+                          <option>Otro</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Guardar</button>
+                    </fieldset>
+                  </form>
+    
+            </section>
+    
+            <section id="movies-list">
+            
+                <h2 class="text-center mt-3 pb-1">Listado de pelis</h2>
+                
+                <table class="table table-hover" id="movies-table">
+                    <thead>
+                      <tr class="table-primary">
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Lanzamiento</th>
+                        <th scope="col">Puntuación</th>
+                        <th scope="col">Idioma</th>
+                        <th scope="col">Autor</th>
+                        <th scope="col">Géneros</th>
+                        <th scope="col">Personajes</th>
+                        <th scope="col">Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                  </table>
+    
+            </section>
+        </main>
+    
+        <footer class="container">
+            <small class="text-center">Hecho con ❤️ en clases de Codo a Codo</small>
+        </footer>
+        <script src="../static/js/main.js"></script>
+
+</body>
+</html>
