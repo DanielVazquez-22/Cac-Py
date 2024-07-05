@@ -1,5 +1,5 @@
 databases:
-  - name: cac_app
+  - name: cac_app_pmp0
     plan: free
 
 services:
