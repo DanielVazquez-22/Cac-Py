@@ -9,10 +9,9 @@
 </head>
 <body>
         <header class="container">
-
-            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="darck">
+            <nav class="navbar navbar-expand-lg " data-bs-theme="darck">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">ZDV Anime</a>
+                <h1 class="titulo-header"><a class="navbar-brand" href="#">ZDV Anime</a></h1>
               </div>
                 <div class="container-fluid">
                   
@@ -29,12 +28,7 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#">Sobre Mi</a>
                       </li>
-                      
                     </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-sm-2" type="search" placeholder="Search">
-                      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
                   </div>
                 </div>
               </nav>
@@ -42,18 +36,18 @@
     
         <main class="container">
             <section id="movie-creation">
-                <h2 class="text-center mt-3 pb-1">Crear una peli</h2>
+                <h2 class="text-center mt-3 pb-1" >Crear una pelicula/serie/capitulos</h2>
     
                 <form id="movies-form">
                     <fieldset>
                       
                       <div>
                         <label for="movieName" class="form-label mt-4">Nombre</label>
-                        <input type="text" class="form-control" id="movieName" placeholder="Intensamente">
+                        <input type="text" class="form-control" id="movieName" placeholder="...">
                       </div>
                       <div>
                         <label for="movieDescription" class="form-label mt-4">Descripción</label>
-                        <input type="text" class="form-control" id="movieDescription" placeholder="Una peli de...">
+                        <input type="text" class="form-control" id="movieDescription" placeholder="...">
                       </div>
                       <div>
                         <label for="releaseDate" class="form-label mt-4">Lanzamiento</label>
@@ -81,7 +75,7 @@
     
             <section id="movies-list">
             
-                <h2 class="text-center mt-3 pb-1">Listado de pelis</h2>
+                <h2 class="text-center mt-3 pb-1">Listado de pelicula/serie/capitulos</h2>
                 
                 <table class="table table-hover" id="movies-table">
                     <thead>
@@ -105,10 +99,11 @@
             </section>
         </main>
     
-        <footer class="container">
-            <small class="text-center">Hecho con ❤️ en clases de Codo a Codo</small>
-        </footer>
-        <script src="../static/js/main.js"></script>
-
+        <footer>
+          <div>
+          <h4> &copy; Todos los derechos reservados | ZDV Anime 2024</h4>
+          </div>
+      </footer>
+        <script src="static/js/main.js"></script>
 </body>
 </html>

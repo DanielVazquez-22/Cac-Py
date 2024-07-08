@@ -1,0 +1,22 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 166, 0);
+    text-align: center;
+    padding: 25px;
+    color: black !important;
+    
+}
+
+footer h4{
+    color: black;
+}
+header{
+    background-color: rgb(255, 166, 0) !important;
+}
+.titulo-header a{
+    background-color: black;
+    color: rgb(255, 166, 0);
+    padding: 10px;
+    border-radius: 5px;
+}

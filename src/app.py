@@ -13,7 +13,7 @@ def get_connection():
 
     return connect(
         host=os.environ.get("DB_HOST", "localhost"),
-        port=int(os.environ.get("DB_PORT", "5432")),
+        port=int(os.environ.get("DB_PORT", "15432")),
         database=os.environ.get("DB_NAME", "cac-app"),
         user=os.environ.get("DB_USER", "cac-app"),
         password=os.environ.get("DB_PASSWORD", "password"),

@@ -25,9 +25,8 @@ services:
     depends_on:
       - cac_postgres
   
-
 cac_backend:
-    image: codoacodo-py
+    image: cac_backend
     build:
       context: .
       dockerfile: Dockerfile
@@ -38,6 +37,10 @@ cac_backend:
       - 5000:8080
     env_file:
       - .env
+    depends_on:
+      - cac_postgres
+
+
       
 networks:
   default:
